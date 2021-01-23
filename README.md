@@ -8,7 +8,7 @@ You must use a txt format files in the program
 
 Legend file : 
 
-0        <----------- Time Unit /0 Minute /1 Hour /2 Day /3 week /4 month /5 year
+0        <----------- Time Unit /0 Minute /1 Hour /2 Day /3 week /4 month /5 year                                                                                                   
 100800   <----------- Total time in the simulation
 10000000 <----------- Clients allowed in the system
 1 	<----------- Total servers
