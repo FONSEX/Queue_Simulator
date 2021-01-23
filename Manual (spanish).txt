@@ -1,0 +1,65 @@
+*-----Manual de usuario-----*
+
+Buscar Programa
+
+Para ejecutar el programa, es necesario contar con un IDE (Entorno deprogramacion) que pueda correr aplicaciones Java. 
+Se utilizara NetBeans como demostracion. 
+
+ *Al abrir netbeans, nos dirigimos a File -> Open Project
+
+ *Luego aparecera el administrador de archivos y buscamos el proyecto
+
+ *Una vez abierto el proyecto presionamos f6(solo en netbeans) o bien buscamos el simbolo de play
+
+ *Al presionar inicio nos encontraremos con la vista del formulario, aqui podras   	
+ ingresar los parametros de la simulacion manualmente o bien cargar un archivo  	 	
+ que ya posea los parametros. Si estas ingresando los parametros de manera  	 	
+ manual, al seleccionar el boton continuar ya estaras pasando a la siguiente fase  	 	
+ del programa. (Asegurate de colocar datos validos, ya que el programa no podria  	 	
+ funcionar de manera correcta si no lo haces)
+ 
+ *Si decidiste cargar un archivo te aparecera una ventana para localizar tu archivo,  	 	
+ una vez seleccionado, se pasara a la siguiente fase del programa (Asegurate de  	 	
+ no cerrar esta ventana sin haber seleccionado un archivo puesto que aparecera  	 	
+ un error)
+
+ *En la siguiente fase nos encontraremos con estadisticas ( una parte mostrada en  	 	
+ una vista y la otra en la consola del IDE
+ 
+ *En caso de haber solicitado la tabla de eventos, la misma se mostrara en la 
+ consola del IDE
+ 
+ (Nota: cuando la columna servidores usados muestra el valor de -1 significa que estan siendo utilizados todos los servidores)
+
+*---Formato del archivo a leer -----*
+
+El archivo tiene que estar en formato txt y adentro del mismo tiene que seguir linea a linea el siguiente orden:
+
+
+
+0        <----------- Unidad de tiempo /0 Minutos /1 Horas /2 Dias /3 Semanas /4 Meses /5 Años
+100800   <----------- Tiempo total de la simulacion
+10000000 <----------- Clientes permitidos en el sistema
+1 	<----------- Cantidad de servidores
+5	<----------- Costo cada servidor
+2	<----------- Costo espera de cliente
+InicioLlegada					<----------- Tablas de tiempos de llegada 
+Lunes:[{1,0.5};{2,0.2};{3,0.2};{4,0.05};{5,0.05}]
+Martes:[{4,0.1};{5,0.1};{7,0.3};{8,0.35};{9,0.15}]
+Miercoles:[{4,0.15};{6,0.2};{8,0.45};{9,0.2}]
+Jueves:[{4,0.1};{7,0.2};{9,0.35};{11,0.35}]
+Viernes:[{1,0.5};{2,0.2};{3,0.2};{4,0.05};{5,0.05}]
+FinLlegada
+InicioServicio					<----------- Tabla de tiempo de servicio
+[{5,0.2};{7,0.3};{8,0.35};{9,0.15}]
+FinServicio
+1       <----------- Tablas de eventos (si:1 no:0)
+1	<----------- Generar archivo (si:1 no:0) 
+
+
+
+
+
+
+ 
+
