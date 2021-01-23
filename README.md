@@ -6,7 +6,7 @@ How to run :
 In the project folder you must create a folder call "Archivo"
 You must use a txt format files in the program
 
-Legend file : 
+Legend file :  
 
 0        <----------------------------------------------------------------------------- Time Unit /0 Minute /1 Hour /2 Day /3 week /4 month /5 year                                                                                                                                                                                                 
 100800   <------------------------------------------------------------------------------------------------------------ Total time in the simulation
